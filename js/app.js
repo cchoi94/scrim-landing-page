@@ -1,3 +1,33 @@
+// Word switching function
+function dataWord () {
+
+  $("[data-words]").attr("data-words", function(i, d){
+    var $self  = $(this),
+        $words = d.split("|"),
+        tot    = $words.length + 1, // adding 1 to account for the default prepopulated text
+        c      = 0; 
+
+    // CREATE SPANS INSIDE SPAN
+    for(var i=0; i<tot; i++) $self.append($('<span/>',{text:$words[i]}));
+
+    // COLLECT WORDS AND HIDE
+    $words = $self.find("span").hide();
+
+    // ANIMATE AND LOOP
+    (function loop(){
+      $self.animate({ width: $words.eq( c ).width() });
+      $words.stop().fadeOut().eq(c).fadeIn().delay(1000).show(0, loop);
+      c = ++c % tot;
+    }());
+    
+  });
+
+}
+
+// dataWord(); // If you don't use external fonts use this on DOM ready; otherwise use:
+$(window).on("load", dataWord);
+
+
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 /*particlesJS.load('particles-bg',
 				 '/js/particles.json',
