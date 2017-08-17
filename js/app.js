@@ -16,15 +16,13 @@ function dataWord () {
     // ANIMATE AND LOOP
     (function loop(){
       $self.animate({ width: $words.eq( c ).width() });
-      $words.stop().fadeOut().eq(c).fadeIn().delay(1000).show(0, loop);
+      $words.stop().fadeOut().eq(c).fadeIn().delay(1500).show(0, loop);
       c = ++c % tot;
     }());
     
   });
 
 }
-
-// dataWord(); // If you don't use external fonts use this on DOM ready; otherwise use:
 $(window).on("load", dataWord);
 
 
