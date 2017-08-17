@@ -36,7 +36,7 @@ particlesJS('particles-bg',
 	      }
 	    },
 	    "opacity": {
-	      "value": 0.5,
+	      "value": 0.2,
 	      "random": true,
 	      "anim": {
 	        "enable": false,
@@ -58,8 +58,8 @@ particlesJS('particles-bg',
 	    "line_linked": {
 	      "enable": true,
 	      "distance": 150,
-	      "color": "#ffffff",
-	      "opacity": 0.4,
+	      "color": "#aaa",
+	      "opacity": 0.3,
 	      "width": 1
 	    },
 	    "move": {

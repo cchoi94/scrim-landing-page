@@ -1,19 +1,24 @@
-*{
+html, body, *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html {
-    background-color: #aaa;
+    background-color: #fff;
     text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
 }
 body {
     font-family: 'Open Sans', 'sans-serif';
     font-size: 140%;    /* Setting the base font size to larger than normal */
     font-weight: 400;
-    color: #fff;
+    color: #222;
     letter-spacing: .15em;
-    line-height: 2em;    
+    line-height: 2.1em;    
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 .clear {
     clear: both;
@@ -29,7 +34,7 @@ section {
 }
 
 .pane {
-    background-color: rgba(170, 170, 170, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     display: inline-block;
 }
 
@@ -38,14 +43,14 @@ section {
     margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
     display: block;
 }
 
 .description{
     text-align: center;
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
     margin-right: 15vw;
     margin-left: 15vw;
 }
@@ -59,9 +64,11 @@ label {
     width: 40vw;
     background-color: #fff;
     border-radius: .4em;
+    margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 10px 10px .6em;
+    border: 2px solid #043963;
 }
 
 .input-field {
@@ -82,7 +89,7 @@ input[type=text] {
 }
 
 .input-btn a {
-    background-image: url("asset/Arrows.svg");
+    background-image: url("../asset/Arrows.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
@@ -95,7 +102,7 @@ input[type=text] {
 
 .input-btn a:hover{
     background-color: #fff;
-    background-image: url("asset/Hover%20Arros.svg");
+    background-image: url("../asset/Hover%20Arros.svg");
     border-radius: 10px;
     border: 2px solid #043963;
 }
