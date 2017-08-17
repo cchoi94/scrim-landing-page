@@ -82,7 +82,7 @@ input[type=text] {
 }
 
 .input-btn a {
-    background-image: url("/asset/Arrows.svg");
+    background-image: url("asset/Arrows.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
@@ -95,7 +95,7 @@ input[type=text] {
 
 .input-btn a:hover{
     background-color: #fff;
-    background-image: url("/asset/Hover%20Arros.svg");
+    background-image: url("asset/Hover%20Arros.svg");
     border-radius: 10px;
     border: 2px solid #043963;
 }
