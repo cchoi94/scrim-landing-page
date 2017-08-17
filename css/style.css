@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #aaa;
+    text-rendering: optimizeLegibility;
+}
+body {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 140%;    /* Setting the base font size to larger than normal */
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: .15em;
+    line-height: 2em;    
+}
+.clear {
+    clear: both;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+
+}
+
+.pane {
+    background-color: rgba(170, 170, 170, 0.7);
+    display: inline-block;
+}
+
+.logo{
+    width: 136px;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    display: block;
+}
+
+.description{
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.input-controls {
+    width: 40vw;
+    background-color: #fff;
+    border-radius: .4em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 10px .6em;
+}
+
+.input-field {
+    padding-right: .3em;
+    overflow: hidden;
+}
+
+input[type=text] {
+    width: 100%;
+    font-size: 100%;
+    border: none;
+    height: 50px;
+    outline: none;  /* Hides the border when selected - a usability trade off for aesthetics */
+}
+
+.input-btn {
+    float: right;
+}
+
+.input-btn a {
+    background-image: url("/asset/Arrows.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    background-color: #043963;
+    height: 50px;
+    width: 50px;
+    display: block;
+    transition: 0.2s;
+}
+
+.input-btn a:hover{
+    background-color: #fff;
+    background-image: url("/asset/Hover%20Arros.svg");
+    border-radius: 10px;
+    border: 2px solid #043963;
+}
+
+
+/* BACKGROUND */
+#particles-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}

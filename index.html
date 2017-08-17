@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1", maximum-scale=1>
-          <link rel="stylesheet" type="text/css" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    </head>
-        <title>Scrim</title>
-    <body>
-        <header>
-            <div class="top-section">
-                <div class="top-left-circle">
-                </div>
-                <div class="logo-description">
-                    <div class="logo">
-                    </div>
-                    <div class="description">
-                        <p>Scrim makes scheduling hassle free, consistent<br> and effortless. The perfect tool for your Trials.</p>
-                    </div>
-                </div>
-                <div class="top-right-circle">
-                </div>
-            </div>
-            <div class="middle-container">
-            <div class="middle-content">
-                <div class="email-input">
-                    <input type="text" name="input" placeholder="Enter email for early access and updates">
-                </div>
-                <div class="email-input-line">
-                </div>
-                    <div class="arrow-btn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1", maximum-scale=1>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <title>Scrim</title>
+</head>
+<body>
+
+<!-- background Particles effect -->
+<div id="particles-bg">
+    <section>
+        <img src="/asset/Scrim Logo.png" class="logo">
+
+        <div class="pane">
+            <p class="description">Scrim makes scheduling hassle free, consistent and effortless.<br />The perfect tool for your Trials.</p>
+
+            <div class="email-input">
+                <label>Enter for early access and updates:</label>
+                <div class="input-controls">
+                    <div class="input-btn">
                         <a href="#"></a>
-            </div>
-            </div>
-            </div>
-            <div class="bottom-half">
-                <div class="bottom-left-circle">
-                </div>
-                <div class="bottom-right-small-circle">
-                </div>
-                <div class="bottom-right-big-circle">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="input" placeholder="Email Address">
+                    </div>
+                    <div class="clear"></div>
                 </div>
             </div>
-        </header>
-    </body>
+        </div>
+    </section>
+</div> <!-- /#particles-bg -->
+
+<!-- BG animation scripts -->
+<script src="/js/particles.min.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>
